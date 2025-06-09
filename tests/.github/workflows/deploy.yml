@@ -1,0 +1,13 @@
+name: Deploy to server
+
+on: push # event
+# a workflow needs multiple jobs to be able to execute.
+
+jobs:
+  first_jobs:
+    runs-on: ubuntu-latest # operating system
+
+    steps: 
+      - name: Valentina
+
+        run: echo "Hello to github actions world!"
