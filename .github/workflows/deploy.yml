@@ -13,6 +13,8 @@ jobs:
         run: echo "Hello to github actions world!"
 
   second_job:
+    # needs is a keyword used to indicate that a job depends on another. It shouldn't execute until the other one sucessfully finishes.
+    needs: first_job # links the first job to the second one. 
     runs-on: ubuntu-latest # operating system
 
     steps: 
