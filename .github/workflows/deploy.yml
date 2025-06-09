@@ -4,10 +4,18 @@ on: push # event
 # a workflow needs multiple jobs to be able to execute.
 
 jobs:
-  first_jobs:
+  first_job:
     runs-on: ubuntu-latest # operating system
 
     steps: 
       - name: Valentina
 
         run: echo "Hello to github actions world!"
+
+  second_job:
+    runs-on: ubuntu-latest # operating system
+
+    steps: 
+      - name: Tests
+
+        run: echo "Hello to my second job"
